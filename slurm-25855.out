@@ -1,0 +1,498 @@
+Slurm nodes: c2-2
+You were assigned 1 gpu(s)
+Fri Apr 15 12:11:52 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.47.03    Driver Version: 510.47.03    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA RTX A6000    On   | 00000000:86:00.0 Off |                  Off |
+| 42%   60C    P8    21W / 300W |      1MiB / 49140MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Currently Loaded Modulefiles:
+ 1) anaconda3/2019.03-1(default)  
+Train Loader 1875
+Val Loader 313
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [51:29<16:18:11, 3089.04s/it] 10%|█         | 2/20 [1:05:54<8:54:20, 1781.16s/it] 15%|█▌        | 3/20 [1:20:44<6:29:19, 1374.09s/it] 20%|██        | 4/20 [1:35:09<5:12:53, 1173.35s/it] 25%|██▌       | 5/20 [1:49:34<4:25:30, 1062.02s/it] 30%|███       | 6/20 [2:03:58<3:52:04, 994.63s/it]  35%|███▌      | 7/20 [2:18:27<3:26:34, 953.44s/it] 40%|████      | 8/20 [2:40:45<3:35:11, 1075.99s/it] 45%|████▌     | 9/20 [2:59:41<3:20:41, 1094.64s/it] 50%|█████     | 10/20 [3:13:59<2:50:15, 1021.56s/it] 55%|█████▌    | 11/20 [3:28:20<2:25:53, 972.59s/it]  60%|██████    | 12/20 [3:42:46<2:05:20, 940.02s/it] 65%|██████▌   | 13/20 [3:57:04<1:46:47, 915.37s/it] 70%|███████   | 14/20 [4:11:25<1:29:52, 898.83s/it] 75%|███████▌  | 15/20 [4:26:05<1:14:25, 893.16s/it] 80%|████████  | 16/20 [4:40:26<58:53, 883.39s/it]   85%|████████▌ | 17/20 [4:54:45<43:48, 876.33s/it] 90%|█████████ | 18/20 [5:09:59<29:34, 887.47s/it] 95%|█████████▌| 19/20 [5:24:23<14:40, 880.49s/it]100%|██████████| 20/20 [5:38:45<00:00, 875.05s/it]100%|██████████| 20/20 [5:38:45<00:00, 1016.30s/it]
+Train | Epoch: 1 | Iter: 100 Overall Loss: 2.726 | BackGround: 0.906 | ET : 0.148 | TC : 0.13 | WT : 0.136
+Train | Epoch: 1 | Iter: 200 Overall Loss: 2.304 | BackGround: 0.951 | ET : 0.311 | TC : 0.227 | WT : 0.255
+Train | Epoch: 1 | Iter: 300 Overall Loss: 2.055 | BackGround: 0.966 | ET : 0.402 | TC : 0.295 | WT : 0.331
+Train | Epoch: 1 | Iter: 400 Overall Loss: 1.907 | BackGround: 0.974 | ET : 0.453 | TC : 0.338 | WT : 0.376
+Train | Epoch: 1 | Iter: 500 Overall Loss: 1.814 | BackGround: 0.979 | ET : 0.486 | TC : 0.365 | WT : 0.405
+Train | Epoch: 1 | Iter: 600 Overall Loss: 1.739 | BackGround: 0.982 | ET : 0.513 | TC : 0.386 | WT : 0.429
+Train | Epoch: 1 | Iter: 700 Overall Loss: 1.686 | BackGround: 0.984 | ET : 0.531 | TC : 0.402 | WT : 0.445
+Train | Epoch: 1 | Iter: 800 Overall Loss: 1.634 | BackGround: 0.986 | ET : 0.549 | TC : 0.418 | WT : 0.462
+Train | Epoch: 1 | Iter: 900 Overall Loss: 1.593 | BackGround: 0.987 | ET : 0.563 | TC : 0.43 | WT : 0.475
+Train | Epoch: 1 | Iter: 1000 Overall Loss: 1.557 | BackGround: 0.988 | ET : 0.574 | TC : 0.443 | WT : 0.486
+Train | Epoch: 1 | Iter: 1100 Overall Loss: 1.527 | BackGround: 0.989 | ET : 0.584 | TC : 0.452 | WT : 0.496
+Train | Epoch: 1 | Iter: 1200 Overall Loss: 1.5 | BackGround: 0.99 | ET : 0.592 | TC : 0.461 | WT : 0.504
+Train | Epoch: 1 | Iter: 1300 Overall Loss: 1.477 | BackGround: 0.99 | ET : 0.6 | TC : 0.468 | WT : 0.512
+Train | Epoch: 1 | Iter: 1400 Overall Loss: 1.456 | BackGround: 0.991 | ET : 0.607 | TC : 0.474 | WT : 0.518
+Train | Epoch: 1 | Iter: 1500 Overall Loss: 1.438 | BackGround: 0.991 | ET : 0.614 | TC : 0.48 | WT : 0.524
+Train | Epoch: 1 | Iter: 1600 Overall Loss: 1.421 | BackGround: 0.992 | ET : 0.619 | TC : 0.485 | WT : 0.53
+Train | Epoch: 1 | Iter: 1700 Overall Loss: 1.403 | BackGround: 0.992 | ET : 0.625 | TC : 0.491 | WT : 0.536
+Train | Epoch: 1 | Iter: 1800 Overall Loss: 1.386 | BackGround: 0.992 | ET : 0.63 | TC : 0.496 | WT : 0.541
+Train | Epoch: 1 | Iter: 1875 Overall Loss: 1.373 | BackGround: 0.993 | ET : 0.635 | TC : 0.5 | WT : 0.545
+Val | Epoch: 1 | Iter: 100 Overall Loss: 1.392 | BackGround: 19.799 | ET : 0.664 | TC : 0.488 | WT : 0.547
+Val | Epoch: 1 | Iter: 200 Overall Loss: 1.402 | BackGround: 10.351 | ET : 0.658 | TC : 0.479 | WT : 0.539
+Val | Epoch: 1 | Iter: 300 Overall Loss: 1.384 | BackGround: 7.223 | ET : 0.657 | TC : 0.486 | WT : 0.543
+Val | Epoch: 1 | Iter: 313 Overall Loss: 1.385 | BackGround: 6.963 | ET : 0.655 | TC : 0.485 | WT : 0.542
+Saving Model
+Train | Epoch: 2 | Iter: 100 Overall Loss: 1.094 | BackGround: 1.008 | ET : 0.734 | TC : 0.602 | WT : 0.646
+Train | Epoch: 2 | Iter: 200 Overall Loss: 1.09 | BackGround: 1.003 | ET : 0.728 | TC : 0.599 | WT : 0.642
+Train | Epoch: 2 | Iter: 300 Overall Loss: 1.073 | BackGround: 1.001 | ET : 0.727 | TC : 0.606 | WT : 0.646
+Train | Epoch: 2 | Iter: 400 Overall Loss: 1.066 | BackGround: 1.001 | ET : 0.73 | TC : 0.607 | WT : 0.648
+Train | Epoch: 2 | Iter: 500 Overall Loss: 1.071 | BackGround: 1.0 | ET : 0.725 | TC : 0.607 | WT : 0.646
+Train | Epoch: 2 | Iter: 600 Overall Loss: 1.063 | BackGround: 1.0 | ET : 0.726 | TC : 0.609 | WT : 0.648
+Train | Epoch: 2 | Iter: 700 Overall Loss: 1.055 | BackGround: 1.0 | ET : 0.728 | TC : 0.611 | WT : 0.65
+Train | Epoch: 2 | Iter: 800 Overall Loss: 1.046 | BackGround: 0.999 | ET : 0.731 | TC : 0.614 | WT : 0.653
+Train | Epoch: 2 | Iter: 900 Overall Loss: 1.044 | BackGround: 0.999 | ET : 0.73 | TC : 0.615 | WT : 0.653
+Train | Epoch: 2 | Iter: 1000 Overall Loss: 1.042 | BackGround: 0.999 | ET : 0.731 | TC : 0.617 | WT : 0.655
+Train | Epoch: 2 | Iter: 1100 Overall Loss: 1.037 | BackGround: 0.999 | ET : 0.732 | TC : 0.617 | WT : 0.656
+Train | Epoch: 2 | Iter: 1200 Overall Loss: 1.038 | BackGround: 0.999 | ET : 0.731 | TC : 0.618 | WT : 0.656
+Train | Epoch: 2 | Iter: 1300 Overall Loss: 1.035 | BackGround: 0.999 | ET : 0.733 | TC : 0.619 | WT : 0.657
+Train | Epoch: 2 | Iter: 1400 Overall Loss: 1.032 | BackGround: 0.999 | ET : 0.733 | TC : 0.619 | WT : 0.657
+Train | Epoch: 2 | Iter: 1500 Overall Loss: 1.029 | BackGround: 0.999 | ET : 0.734 | TC : 0.621 | WT : 0.659
+Train | Epoch: 2 | Iter: 1600 Overall Loss: 1.023 | BackGround: 0.999 | ET : 0.736 | TC : 0.623 | WT : 0.66
+Train | Epoch: 2 | Iter: 1700 Overall Loss: 1.024 | BackGround: 0.999 | ET : 0.734 | TC : 0.623 | WT : 0.66
+Train | Epoch: 2 | Iter: 1800 Overall Loss: 1.023 | BackGround: 0.999 | ET : 0.734 | TC : 0.623 | WT : 0.66
+Train | Epoch: 2 | Iter: 1875 Overall Loss: 1.022 | BackGround: 0.999 | ET : 0.734 | TC : 0.623 | WT : 0.66
+Val | Epoch: 2 | Iter: 100 Overall Loss: 1.126 | BackGround: 19.914 | ET : 0.727 | TC : 0.59 | WT : 0.635
+Val | Epoch: 2 | Iter: 200 Overall Loss: 1.117 | BackGround: 10.409 | ET : 0.726 | TC : 0.587 | WT : 0.633
+Val | Epoch: 2 | Iter: 300 Overall Loss: 1.099 | BackGround: 7.261 | ET : 0.724 | TC : 0.595 | WT : 0.638
+Val | Epoch: 2 | Iter: 313 Overall Loss: 1.103 | BackGround: 7.0 | ET : 0.72 | TC : 0.594 | WT : 0.636
+Saving Model
+Train | Epoch: 3 | Iter: 100 Overall Loss: 0.946 | BackGround: 1.008 | ET : 0.767 | TC : 0.659 | WT : 0.695
+Train | Epoch: 3 | Iter: 200 Overall Loss: 0.951 | BackGround: 1.003 | ET : 0.764 | TC : 0.651 | WT : 0.689
+Train | Epoch: 3 | Iter: 300 Overall Loss: 0.948 | BackGround: 1.002 | ET : 0.76 | TC : 0.652 | WT : 0.688
+Train | Epoch: 3 | Iter: 400 Overall Loss: 0.947 | BackGround: 1.001 | ET : 0.76 | TC : 0.651 | WT : 0.687
+Train | Epoch: 3 | Iter: 500 Overall Loss: 0.96 | BackGround: 1.0 | ET : 0.753 | TC : 0.647 | WT : 0.683
+Train | Epoch: 3 | Iter: 600 Overall Loss: 0.95 | BackGround: 1.0 | ET : 0.754 | TC : 0.651 | WT : 0.685
+Train | Epoch: 3 | Iter: 700 Overall Loss: 0.952 | BackGround: 1.0 | ET : 0.755 | TC : 0.649 | WT : 0.685
+Train | Epoch: 3 | Iter: 800 Overall Loss: 0.95 | BackGround: 1.0 | ET : 0.756 | TC : 0.649 | WT : 0.685
+Train | Epoch: 3 | Iter: 900 Overall Loss: 0.947 | BackGround: 1.0 | ET : 0.757 | TC : 0.65 | WT : 0.686
+Train | Epoch: 3 | Iter: 1000 Overall Loss: 0.944 | BackGround: 0.999 | ET : 0.756 | TC : 0.652 | WT : 0.687
+Train | Epoch: 3 | Iter: 1100 Overall Loss: 0.944 | BackGround: 0.999 | ET : 0.756 | TC : 0.652 | WT : 0.687
+Train | Epoch: 3 | Iter: 1200 Overall Loss: 0.942 | BackGround: 0.999 | ET : 0.756 | TC : 0.653 | WT : 0.687
+Train | Epoch: 3 | Iter: 1300 Overall Loss: 0.938 | BackGround: 0.999 | ET : 0.757 | TC : 0.654 | WT : 0.688
+Train | Epoch: 3 | Iter: 1400 Overall Loss: 0.939 | BackGround: 0.999 | ET : 0.757 | TC : 0.654 | WT : 0.688
+Train | Epoch: 3 | Iter: 1500 Overall Loss: 0.939 | BackGround: 0.999 | ET : 0.756 | TC : 0.654 | WT : 0.688
+Train | Epoch: 3 | Iter: 1600 Overall Loss: 0.94 | BackGround: 0.999 | ET : 0.755 | TC : 0.654 | WT : 0.688
+Train | Epoch: 3 | Iter: 1700 Overall Loss: 0.939 | BackGround: 0.999 | ET : 0.756 | TC : 0.654 | WT : 0.688
+Train | Epoch: 3 | Iter: 1800 Overall Loss: 0.936 | BackGround: 0.999 | ET : 0.757 | TC : 0.655 | WT : 0.689
+Train | Epoch: 3 | Iter: 1875 Overall Loss: 0.933 | BackGround: 0.999 | ET : 0.757 | TC : 0.656 | WT : 0.69
+Val | Epoch: 3 | Iter: 100 Overall Loss: 1.067 | BackGround: 19.918 | ET : 0.71 | TC : 0.627 | WT : 0.655
+Val | Epoch: 3 | Iter: 200 Overall Loss: 1.072 | BackGround: 10.411 | ET : 0.697 | TC : 0.623 | WT : 0.648
+Val | Epoch: 3 | Iter: 300 Overall Loss: 1.084 | BackGround: 7.263 | ET : 0.689 | TC : 0.619 | WT : 0.642
+Val | Epoch: 3 | Iter: 313 Overall Loss: 1.082 | BackGround: 7.002 | ET : 0.69 | TC : 0.619 | WT : 0.643
+Saving Model
+Train | Epoch: 4 | Iter: 100 Overall Loss: 0.897 | BackGround: 1.009 | ET : 0.769 | TC : 0.682 | WT : 0.711
+Train | Epoch: 4 | Iter: 200 Overall Loss: 0.888 | BackGround: 1.004 | ET : 0.771 | TC : 0.678 | WT : 0.709
+Train | Epoch: 4 | Iter: 300 Overall Loss: 0.883 | BackGround: 1.002 | ET : 0.768 | TC : 0.68 | WT : 0.709
+Train | Epoch: 4 | Iter: 400 Overall Loss: 0.87 | BackGround: 1.001 | ET : 0.773 | TC : 0.683 | WT : 0.713
+Train | Epoch: 4 | Iter: 500 Overall Loss: 0.871 | BackGround: 1.001 | ET : 0.773 | TC : 0.681 | WT : 0.712
+Train | Epoch: 4 | Iter: 600 Overall Loss: 0.878 | BackGround: 1.0 | ET : 0.773 | TC : 0.677 | WT : 0.709
+Train | Epoch: 4 | Iter: 700 Overall Loss: 0.881 | BackGround: 1.0 | ET : 0.772 | TC : 0.676 | WT : 0.708
+Train | Epoch: 4 | Iter: 800 Overall Loss: 0.88 | BackGround: 1.0 | ET : 0.772 | TC : 0.676 | WT : 0.708
+Train | Epoch: 4 | Iter: 900 Overall Loss: 0.882 | BackGround: 1.0 | ET : 0.772 | TC : 0.675 | WT : 0.708
+Train | Epoch: 4 | Iter: 1000 Overall Loss: 0.878 | BackGround: 1.0 | ET : 0.773 | TC : 0.677 | WT : 0.709
+Train | Epoch: 4 | Iter: 1100 Overall Loss: 0.875 | BackGround: 0.999 | ET : 0.775 | TC : 0.677 | WT : 0.71
+Train | Epoch: 4 | Iter: 1200 Overall Loss: 0.873 | BackGround: 0.999 | ET : 0.776 | TC : 0.677 | WT : 0.71
+Train | Epoch: 4 | Iter: 1300 Overall Loss: 0.869 | BackGround: 0.999 | ET : 0.777 | TC : 0.679 | WT : 0.712
+Train | Epoch: 4 | Iter: 1400 Overall Loss: 0.864 | BackGround: 0.999 | ET : 0.779 | TC : 0.68 | WT : 0.713
+Train | Epoch: 4 | Iter: 1500 Overall Loss: 0.86 | BackGround: 0.999 | ET : 0.781 | TC : 0.681 | WT : 0.715
+Train | Epoch: 4 | Iter: 1600 Overall Loss: 0.858 | BackGround: 0.999 | ET : 0.781 | TC : 0.682 | WT : 0.715
+Train | Epoch: 4 | Iter: 1700 Overall Loss: 0.854 | BackGround: 0.999 | ET : 0.783 | TC : 0.683 | WT : 0.717
+Train | Epoch: 4 | Iter: 1800 Overall Loss: 0.849 | BackGround: 0.999 | ET : 0.784 | TC : 0.685 | WT : 0.718
+Train | Epoch: 4 | Iter: 1875 Overall Loss: 0.846 | BackGround: 0.999 | ET : 0.785 | TC : 0.685 | WT : 0.719
+Val | Epoch: 4 | Iter: 100 Overall Loss: 0.972 | BackGround: 19.92 | ET : 0.753 | TC : 0.653 | WT : 0.687
+Val | Epoch: 4 | Iter: 200 Overall Loss: 0.973 | BackGround: 10.412 | ET : 0.752 | TC : 0.646 | WT : 0.681
+Val | Epoch: 4 | Iter: 300 Overall Loss: 0.961 | BackGround: 7.263 | ET : 0.753 | TC : 0.649 | WT : 0.684
+Val | Epoch: 4 | Iter: 313 Overall Loss: 0.964 | BackGround: 7.002 | ET : 0.753 | TC : 0.648 | WT : 0.683
+Saving Model
+Train | Epoch: 5 | Iter: 100 Overall Loss: 0.823 | BackGround: 1.009 | ET : 0.805 | TC : 0.702 | WT : 0.736
+Train | Epoch: 5 | Iter: 200 Overall Loss: 0.799 | BackGround: 1.004 | ET : 0.81 | TC : 0.704 | WT : 0.739
+Train | Epoch: 5 | Iter: 300 Overall Loss: 0.811 | BackGround: 1.002 | ET : 0.804 | TC : 0.699 | WT : 0.734
+Train | Epoch: 5 | Iter: 400 Overall Loss: 0.808 | BackGround: 1.001 | ET : 0.805 | TC : 0.698 | WT : 0.734
+Train | Epoch: 5 | Iter: 500 Overall Loss: 0.814 | BackGround: 1.001 | ET : 0.803 | TC : 0.696 | WT : 0.731
+Train | Epoch: 5 | Iter: 600 Overall Loss: 0.808 | BackGround: 1.0 | ET : 0.803 | TC : 0.698 | WT : 0.733
+Train | Epoch: 5 | Iter: 700 Overall Loss: 0.808 | BackGround: 1.0 | ET : 0.802 | TC : 0.698 | WT : 0.733
+Train | Epoch: 5 | Iter: 800 Overall Loss: 0.803 | BackGround: 1.0 | ET : 0.803 | TC : 0.7 | WT : 0.734
+Train | Epoch: 5 | Iter: 900 Overall Loss: 0.8 | BackGround: 1.0 | ET : 0.803 | TC : 0.701 | WT : 0.735
+Train | Epoch: 5 | Iter: 1000 Overall Loss: 0.798 | BackGround: 1.0 | ET : 0.803 | TC : 0.702 | WT : 0.735
+Train | Epoch: 5 | Iter: 1100 Overall Loss: 0.797 | BackGround: 1.0 | ET : 0.804 | TC : 0.702 | WT : 0.736
+Train | Epoch: 5 | Iter: 1200 Overall Loss: 0.792 | BackGround: 0.999 | ET : 0.805 | TC : 0.703 | WT : 0.737
+Train | Epoch: 5 | Iter: 1300 Overall Loss: 0.79 | BackGround: 0.999 | ET : 0.806 | TC : 0.704 | WT : 0.738
+Train | Epoch: 5 | Iter: 1400 Overall Loss: 0.789 | BackGround: 0.999 | ET : 0.806 | TC : 0.705 | WT : 0.738
+Train | Epoch: 5 | Iter: 1500 Overall Loss: 0.786 | BackGround: 0.999 | ET : 0.806 | TC : 0.706 | WT : 0.739
+Train | Epoch: 5 | Iter: 1600 Overall Loss: 0.785 | BackGround: 0.999 | ET : 0.807 | TC : 0.706 | WT : 0.74
+Train | Epoch: 5 | Iter: 1700 Overall Loss: 0.785 | BackGround: 0.999 | ET : 0.807 | TC : 0.706 | WT : 0.739
+Train | Epoch: 5 | Iter: 1800 Overall Loss: 0.783 | BackGround: 0.999 | ET : 0.807 | TC : 0.707 | WT : 0.74
+Train | Epoch: 5 | Iter: 1875 Overall Loss: 0.781 | BackGround: 0.999 | ET : 0.808 | TC : 0.707 | WT : 0.741
+Val | Epoch: 5 | Iter: 100 Overall Loss: 0.957 | BackGround: 19.922 | ET : 0.742 | TC : 0.666 | WT : 0.692
+Val | Epoch: 5 | Iter: 200 Overall Loss: 0.94 | BackGround: 10.413 | ET : 0.746 | TC : 0.665 | WT : 0.692
+Val | Epoch: 5 | Iter: 300 Overall Loss: 0.934 | BackGround: 7.264 | ET : 0.751 | TC : 0.663 | WT : 0.692
+Val | Epoch: 5 | Iter: 313 Overall Loss: 0.933 | BackGround: 7.003 | ET : 0.751 | TC : 0.663 | WT : 0.693
+Saving Model
+Train | Epoch: 6 | Iter: 100 Overall Loss: 0.752 | BackGround: 1.009 | ET : 0.832 | TC : 0.724 | WT : 0.76
+Train | Epoch: 6 | Iter: 200 Overall Loss: 0.747 | BackGround: 1.004 | ET : 0.824 | TC : 0.723 | WT : 0.756
+Train | Epoch: 6 | Iter: 300 Overall Loss: 0.769 | BackGround: 1.002 | ET : 0.814 | TC : 0.714 | WT : 0.747
+Train | Epoch: 6 | Iter: 400 Overall Loss: 0.763 | BackGround: 1.001 | ET : 0.816 | TC : 0.715 | WT : 0.749
+Train | Epoch: 6 | Iter: 500 Overall Loss: 0.759 | BackGround: 1.001 | ET : 0.817 | TC : 0.716 | WT : 0.75
+Train | Epoch: 6 | Iter: 600 Overall Loss: 0.755 | BackGround: 1.0 | ET : 0.818 | TC : 0.717 | WT : 0.75
+Train | Epoch: 6 | Iter: 700 Overall Loss: 0.752 | BackGround: 1.0 | ET : 0.819 | TC : 0.717 | WT : 0.751
+Train | Epoch: 6 | Iter: 800 Overall Loss: 0.749 | BackGround: 1.0 | ET : 0.82 | TC : 0.719 | WT : 0.752
+Train | Epoch: 6 | Iter: 900 Overall Loss: 0.742 | BackGround: 1.0 | ET : 0.82 | TC : 0.721 | WT : 0.754
+Train | Epoch: 6 | Iter: 1000 Overall Loss: 0.744 | BackGround: 1.0 | ET : 0.819 | TC : 0.721 | WT : 0.753
+Train | Epoch: 6 | Iter: 1100 Overall Loss: 0.742 | BackGround: 1.0 | ET : 0.82 | TC : 0.721 | WT : 0.754
+Train | Epoch: 6 | Iter: 1200 Overall Loss: 0.74 | BackGround: 1.0 | ET : 0.822 | TC : 0.721 | WT : 0.755
+Train | Epoch: 6 | Iter: 1300 Overall Loss: 0.736 | BackGround: 0.999 | ET : 0.822 | TC : 0.723 | WT : 0.756
+Train | Epoch: 6 | Iter: 1400 Overall Loss: 0.738 | BackGround: 0.999 | ET : 0.822 | TC : 0.722 | WT : 0.755
+Train | Epoch: 6 | Iter: 1500 Overall Loss: 0.739 | BackGround: 0.999 | ET : 0.821 | TC : 0.721 | WT : 0.754
+Train | Epoch: 6 | Iter: 1600 Overall Loss: 0.738 | BackGround: 0.999 | ET : 0.821 | TC : 0.722 | WT : 0.755
+Train | Epoch: 6 | Iter: 1700 Overall Loss: 0.734 | BackGround: 0.999 | ET : 0.822 | TC : 0.723 | WT : 0.756
+Train | Epoch: 6 | Iter: 1800 Overall Loss: 0.731 | BackGround: 0.999 | ET : 0.823 | TC : 0.725 | WT : 0.757
+Train | Epoch: 6 | Iter: 1875 Overall Loss: 0.73 | BackGround: 0.999 | ET : 0.824 | TC : 0.725 | WT : 0.758
+Val | Epoch: 6 | Iter: 100 Overall Loss: 0.952 | BackGround: 19.924 | ET : 0.803 | TC : 0.639 | WT : 0.693
+Val | Epoch: 6 | Iter: 200 Overall Loss: 0.974 | BackGround: 10.414 | ET : 0.798 | TC : 0.622 | WT : 0.681
+Val | Epoch: 6 | Iter: 300 Overall Loss: 0.987 | BackGround: 7.265 | ET : 0.795 | TC : 0.615 | WT : 0.675
+Val | Epoch: 6 | Iter: 313 Overall Loss: 0.988 | BackGround: 7.004 | ET : 0.794 | TC : 0.615 | WT : 0.674
+Train | Epoch: 7 | Iter: 100 Overall Loss: 0.728 | BackGround: 1.009 | ET : 0.837 | TC : 0.733 | WT : 0.768
+Train | Epoch: 7 | Iter: 200 Overall Loss: 0.717 | BackGround: 1.004 | ET : 0.837 | TC : 0.731 | WT : 0.766
+Train | Epoch: 7 | Iter: 300 Overall Loss: 0.72 | BackGround: 1.002 | ET : 0.832 | TC : 0.73 | WT : 0.764
+Train | Epoch: 7 | Iter: 400 Overall Loss: 0.713 | BackGround: 1.001 | ET : 0.832 | TC : 0.732 | WT : 0.765
+Train | Epoch: 7 | Iter: 500 Overall Loss: 0.712 | BackGround: 1.001 | ET : 0.832 | TC : 0.732 | WT : 0.765
+Train | Epoch: 7 | Iter: 600 Overall Loss: 0.706 | BackGround: 1.0 | ET : 0.833 | TC : 0.734 | WT : 0.767
+Train | Epoch: 7 | Iter: 700 Overall Loss: 0.704 | BackGround: 1.0 | ET : 0.832 | TC : 0.735 | WT : 0.767
+Train | Epoch: 7 | Iter: 800 Overall Loss: 0.701 | BackGround: 1.0 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 900 Overall Loss: 0.7 | BackGround: 1.0 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 1000 Overall Loss: 0.699 | BackGround: 1.0 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 1100 Overall Loss: 0.698 | BackGround: 1.0 | ET : 0.834 | TC : 0.737 | WT : 0.769
+Train | Epoch: 7 | Iter: 1200 Overall Loss: 0.7 | BackGround: 1.0 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 1300 Overall Loss: 0.697 | BackGround: 1.0 | ET : 0.833 | TC : 0.737 | WT : 0.769
+Train | Epoch: 7 | Iter: 1400 Overall Loss: 0.699 | BackGround: 1.0 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 1500 Overall Loss: 0.699 | BackGround: 0.999 | ET : 0.833 | TC : 0.736 | WT : 0.768
+Train | Epoch: 7 | Iter: 1600 Overall Loss: 0.696 | BackGround: 0.999 | ET : 0.834 | TC : 0.737 | WT : 0.769
+Train | Epoch: 7 | Iter: 1700 Overall Loss: 0.695 | BackGround: 0.999 | ET : 0.834 | TC : 0.737 | WT : 0.769
+Train | Epoch: 7 | Iter: 1800 Overall Loss: 0.695 | BackGround: 0.999 | ET : 0.835 | TC : 0.737 | WT : 0.769
+Train | Epoch: 7 | Iter: 1875 Overall Loss: 0.695 | BackGround: 0.999 | ET : 0.835 | TC : 0.736 | WT : 0.769
+Val | Epoch: 7 | Iter: 100 Overall Loss: 0.91 | BackGround: 19.925 | ET : 0.798 | TC : 0.662 | WT : 0.707
+Val | Epoch: 7 | Iter: 200 Overall Loss: 0.901 | BackGround: 10.414 | ET : 0.798 | TC : 0.659 | WT : 0.705
+Val | Epoch: 7 | Iter: 300 Overall Loss: 0.895 | BackGround: 7.265 | ET : 0.8 | TC : 0.659 | WT : 0.706
+Val | Epoch: 7 | Iter: 313 Overall Loss: 0.894 | BackGround: 7.004 | ET : 0.799 | TC : 0.659 | WT : 0.706
+Saving Model
+Train | Epoch: 8 | Iter: 100 Overall Loss: 0.65 | BackGround: 1.009 | ET : 0.855 | TC : 0.763 | WT : 0.794
+Train | Epoch: 8 | Iter: 200 Overall Loss: 0.638 | BackGround: 1.004 | ET : 0.854 | TC : 0.762 | WT : 0.793
+Train | Epoch: 8 | Iter: 300 Overall Loss: 0.642 | BackGround: 1.002 | ET : 0.853 | TC : 0.758 | WT : 0.79
+Train | Epoch: 8 | Iter: 400 Overall Loss: 0.647 | BackGround: 1.001 | ET : 0.851 | TC : 0.756 | WT : 0.787
+Train | Epoch: 8 | Iter: 500 Overall Loss: 0.649 | BackGround: 1.001 | ET : 0.849 | TC : 0.754 | WT : 0.786
+Train | Epoch: 8 | Iter: 600 Overall Loss: 0.646 | BackGround: 1.001 | ET : 0.85 | TC : 0.755 | WT : 0.787
+Train | Epoch: 8 | Iter: 700 Overall Loss: 0.648 | BackGround: 1.0 | ET : 0.85 | TC : 0.754 | WT : 0.786
+Train | Epoch: 8 | Iter: 800 Overall Loss: 0.648 | BackGround: 1.0 | ET : 0.849 | TC : 0.754 | WT : 0.786
+Train | Epoch: 8 | Iter: 900 Overall Loss: 0.648 | BackGround: 1.0 | ET : 0.849 | TC : 0.754 | WT : 0.786
+Train | Epoch: 8 | Iter: 1000 Overall Loss: 0.649 | BackGround: 1.0 | ET : 0.848 | TC : 0.754 | WT : 0.785
+Train | Epoch: 8 | Iter: 1100 Overall Loss: 0.65 | BackGround: 1.0 | ET : 0.848 | TC : 0.753 | WT : 0.785
+Train | Epoch: 8 | Iter: 1200 Overall Loss: 0.651 | BackGround: 1.0 | ET : 0.847 | TC : 0.752 | WT : 0.784
+Train | Epoch: 8 | Iter: 1300 Overall Loss: 0.657 | BackGround: 1.0 | ET : 0.846 | TC : 0.75 | WT : 0.782
+Train | Epoch: 8 | Iter: 1400 Overall Loss: 0.657 | BackGround: 1.0 | ET : 0.846 | TC : 0.75 | WT : 0.782
+Train | Epoch: 8 | Iter: 1500 Overall Loss: 0.656 | BackGround: 1.0 | ET : 0.847 | TC : 0.75 | WT : 0.783
+Train | Epoch: 8 | Iter: 1600 Overall Loss: 0.658 | BackGround: 0.999 | ET : 0.846 | TC : 0.75 | WT : 0.782
+Train | Epoch: 8 | Iter: 1700 Overall Loss: 0.655 | BackGround: 0.999 | ET : 0.847 | TC : 0.75 | WT : 0.783
+Train | Epoch: 8 | Iter: 1800 Overall Loss: 0.655 | BackGround: 0.999 | ET : 0.847 | TC : 0.75 | WT : 0.783
+Train | Epoch: 8 | Iter: 1875 Overall Loss: 0.654 | BackGround: 0.999 | ET : 0.847 | TC : 0.751 | WT : 0.783
+Val | Epoch: 8 | Iter: 100 Overall Loss: 0.892 | BackGround: 19.926 | ET : 0.803 | TC : 0.668 | WT : 0.713
+Val | Epoch: 8 | Iter: 200 Overall Loss: 0.884 | BackGround: 10.415 | ET : 0.798 | TC : 0.667 | WT : 0.711
+Val | Epoch: 8 | Iter: 300 Overall Loss: 0.867 | BackGround: 7.266 | ET : 0.805 | TC : 0.669 | WT : 0.715
+Val | Epoch: 8 | Iter: 313 Overall Loss: 0.866 | BackGround: 7.004 | ET : 0.805 | TC : 0.67 | WT : 0.715
+Saving Model
+Train | Epoch: 9 | Iter: 100 Overall Loss: 0.623 | BackGround: 1.009 | ET : 0.864 | TC : 0.772 | WT : 0.803
+Train | Epoch: 9 | Iter: 200 Overall Loss: 0.622 | BackGround: 1.004 | ET : 0.86 | TC : 0.767 | WT : 0.798
+Train | Epoch: 9 | Iter: 300 Overall Loss: 0.619 | BackGround: 1.002 | ET : 0.86 | TC : 0.766 | WT : 0.797
+Train | Epoch: 9 | Iter: 400 Overall Loss: 0.623 | BackGround: 1.001 | ET : 0.857 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 500 Overall Loss: 0.619 | BackGround: 1.001 | ET : 0.857 | TC : 0.765 | WT : 0.796
+Train | Epoch: 9 | Iter: 600 Overall Loss: 0.622 | BackGround: 1.001 | ET : 0.856 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 700 Overall Loss: 0.623 | BackGround: 1.0 | ET : 0.856 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 800 Overall Loss: 0.624 | BackGround: 1.0 | ET : 0.856 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 900 Overall Loss: 0.621 | BackGround: 1.0 | ET : 0.856 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 1000 Overall Loss: 0.622 | BackGround: 1.0 | ET : 0.855 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 1100 Overall Loss: 0.622 | BackGround: 1.0 | ET : 0.855 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 1200 Overall Loss: 0.621 | BackGround: 1.0 | ET : 0.856 | TC : 0.763 | WT : 0.794
+Train | Epoch: 9 | Iter: 1300 Overall Loss: 0.619 | BackGround: 1.0 | ET : 0.856 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 1400 Overall Loss: 0.618 | BackGround: 1.0 | ET : 0.856 | TC : 0.765 | WT : 0.795
+Train | Epoch: 9 | Iter: 1500 Overall Loss: 0.619 | BackGround: 1.0 | ET : 0.856 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 1600 Overall Loss: 0.619 | BackGround: 1.0 | ET : 0.856 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 1700 Overall Loss: 0.617 | BackGround: 1.0 | ET : 0.856 | TC : 0.764 | WT : 0.795
+Train | Epoch: 9 | Iter: 1800 Overall Loss: 0.616 | BackGround: 0.999 | ET : 0.856 | TC : 0.765 | WT : 0.796
+Train | Epoch: 9 | Iter: 1875 Overall Loss: 0.616 | BackGround: 0.999 | ET : 0.856 | TC : 0.765 | WT : 0.795
+Val | Epoch: 9 | Iter: 100 Overall Loss: 0.917 | BackGround: 19.927 | ET : 0.784 | TC : 0.665 | WT : 0.705
+Val | Epoch: 9 | Iter: 200 Overall Loss: 0.889 | BackGround: 10.415 | ET : 0.791 | TC : 0.668 | WT : 0.709
+Val | Epoch: 9 | Iter: 300 Overall Loss: 0.887 | BackGround: 7.266 | ET : 0.792 | TC : 0.666 | WT : 0.708
+Val | Epoch: 9 | Iter: 313 Overall Loss: 0.891 | BackGround: 7.005 | ET : 0.79 | TC : 0.665 | WT : 0.707
+Train | Epoch: 10 | Iter: 100 Overall Loss: 0.618 | BackGround: 1.009 | ET : 0.865 | TC : 0.774 | WT : 0.805
+Train | Epoch: 10 | Iter: 200 Overall Loss: 0.613 | BackGround: 1.004 | ET : 0.862 | TC : 0.77 | WT : 0.801
+Train | Epoch: 10 | Iter: 300 Overall Loss: 0.611 | BackGround: 1.002 | ET : 0.858 | TC : 0.771 | WT : 0.8
+Train | Epoch: 10 | Iter: 400 Overall Loss: 0.61 | BackGround: 1.001 | ET : 0.858 | TC : 0.77 | WT : 0.8
+Train | Epoch: 10 | Iter: 500 Overall Loss: 0.619 | BackGround: 1.001 | ET : 0.856 | TC : 0.766 | WT : 0.796
+Train | Epoch: 10 | Iter: 600 Overall Loss: 0.616 | BackGround: 1.001 | ET : 0.856 | TC : 0.767 | WT : 0.797
+Train | Epoch: 10 | Iter: 700 Overall Loss: 0.616 | BackGround: 1.0 | ET : 0.857 | TC : 0.766 | WT : 0.796
+Train | Epoch: 10 | Iter: 800 Overall Loss: 0.616 | BackGround: 1.0 | ET : 0.857 | TC : 0.766 | WT : 0.796
+Train | Epoch: 10 | Iter: 900 Overall Loss: 0.611 | BackGround: 1.0 | ET : 0.858 | TC : 0.767 | WT : 0.798
+Train | Epoch: 10 | Iter: 1000 Overall Loss: 0.612 | BackGround: 1.0 | ET : 0.858 | TC : 0.767 | WT : 0.797
+Train | Epoch: 10 | Iter: 1100 Overall Loss: 0.609 | BackGround: 1.0 | ET : 0.859 | TC : 0.768 | WT : 0.798
+Train | Epoch: 10 | Iter: 1200 Overall Loss: 0.607 | BackGround: 1.0 | ET : 0.86 | TC : 0.768 | WT : 0.799
+Train | Epoch: 10 | Iter: 1300 Overall Loss: 0.603 | BackGround: 1.0 | ET : 0.861 | TC : 0.769 | WT : 0.8
+Train | Epoch: 10 | Iter: 1400 Overall Loss: 0.601 | BackGround: 1.0 | ET : 0.861 | TC : 0.77 | WT : 0.8
+Train | Epoch: 10 | Iter: 1500 Overall Loss: 0.599 | BackGround: 1.0 | ET : 0.862 | TC : 0.771 | WT : 0.802
+Train | Epoch: 10 | Iter: 1600 Overall Loss: 0.597 | BackGround: 1.0 | ET : 0.862 | TC : 0.772 | WT : 0.802
+Train | Epoch: 10 | Iter: 1700 Overall Loss: 0.596 | BackGround: 1.0 | ET : 0.862 | TC : 0.772 | WT : 0.802
+Train | Epoch: 10 | Iter: 1800 Overall Loss: 0.594 | BackGround: 0.999 | ET : 0.862 | TC : 0.773 | WT : 0.803
+Train | Epoch: 10 | Iter: 1875 Overall Loss: 0.594 | BackGround: 0.999 | ET : 0.863 | TC : 0.773 | WT : 0.803
+Val | Epoch: 10 | Iter: 100 Overall Loss: 0.906 | BackGround: 19.928 | ET : 0.794 | TC : 0.666 | WT : 0.709
+Val | Epoch: 10 | Iter: 200 Overall Loss: 0.902 | BackGround: 10.416 | ET : 0.794 | TC : 0.66 | WT : 0.705
+Val | Epoch: 10 | Iter: 300 Overall Loss: 0.898 | BackGround: 7.266 | ET : 0.795 | TC : 0.659 | WT : 0.704
+Val | Epoch: 10 | Iter: 313 Overall Loss: 0.903 | BackGround: 7.005 | ET : 0.793 | TC : 0.658 | WT : 0.703
+Train | Epoch: 11 | Iter: 100 Overall Loss: 0.571 | BackGround: 1.009 | ET : 0.88 | TC : 0.79 | WT : 0.82
+Train | Epoch: 11 | Iter: 200 Overall Loss: 0.57 | BackGround: 1.004 | ET : 0.874 | TC : 0.786 | WT : 0.816
+Train | Epoch: 11 | Iter: 300 Overall Loss: 0.572 | BackGround: 1.002 | ET : 0.871 | TC : 0.784 | WT : 0.813
+Train | Epoch: 11 | Iter: 400 Overall Loss: 0.574 | BackGround: 1.001 | ET : 0.869 | TC : 0.782 | WT : 0.811
+Train | Epoch: 11 | Iter: 500 Overall Loss: 0.576 | BackGround: 1.001 | ET : 0.869 | TC : 0.781 | WT : 0.81
+Train | Epoch: 11 | Iter: 600 Overall Loss: 0.575 | BackGround: 1.001 | ET : 0.868 | TC : 0.782 | WT : 0.811
+Train | Epoch: 11 | Iter: 700 Overall Loss: 0.573 | BackGround: 1.0 | ET : 0.868 | TC : 0.782 | WT : 0.811
+Train | Epoch: 11 | Iter: 800 Overall Loss: 0.575 | BackGround: 1.0 | ET : 0.867 | TC : 0.781 | WT : 0.81
+Train | Epoch: 11 | Iter: 900 Overall Loss: 0.574 | BackGround: 1.0 | ET : 0.868 | TC : 0.781 | WT : 0.81
+Train | Epoch: 11 | Iter: 1000 Overall Loss: 0.574 | BackGround: 1.0 | ET : 0.867 | TC : 0.781 | WT : 0.81
+Train | Epoch: 11 | Iter: 1100 Overall Loss: 0.574 | BackGround: 1.0 | ET : 0.868 | TC : 0.781 | WT : 0.81
+Train | Epoch: 11 | Iter: 1200 Overall Loss: 0.572 | BackGround: 1.0 | ET : 0.869 | TC : 0.782 | WT : 0.811
+Train | Epoch: 11 | Iter: 1300 Overall Loss: 0.569 | BackGround: 1.0 | ET : 0.869 | TC : 0.782 | WT : 0.811
+Train | Epoch: 11 | Iter: 1400 Overall Loss: 0.567 | BackGround: 1.0 | ET : 0.87 | TC : 0.783 | WT : 0.812
+Train | Epoch: 11 | Iter: 1500 Overall Loss: 0.566 | BackGround: 1.0 | ET : 0.869 | TC : 0.783 | WT : 0.812
+Train | Epoch: 11 | Iter: 1600 Overall Loss: 0.566 | BackGround: 1.0 | ET : 0.87 | TC : 0.784 | WT : 0.813
+Train | Epoch: 11 | Iter: 1700 Overall Loss: 0.565 | BackGround: 1.0 | ET : 0.869 | TC : 0.784 | WT : 0.813
+Train | Epoch: 11 | Iter: 1800 Overall Loss: 0.564 | BackGround: 1.0 | ET : 0.87 | TC : 0.784 | WT : 0.813
+Train | Epoch: 11 | Iter: 1875 Overall Loss: 0.564 | BackGround: 1.0 | ET : 0.87 | TC : 0.784 | WT : 0.813
+Val | Epoch: 11 | Iter: 100 Overall Loss: 0.867 | BackGround: 19.929 | ET : 0.794 | TC : 0.685 | WT : 0.721
+Val | Epoch: 11 | Iter: 200 Overall Loss: 0.884 | BackGround: 10.416 | ET : 0.783 | TC : 0.675 | WT : 0.711
+Val | Epoch: 11 | Iter: 300 Overall Loss: 0.889 | BackGround: 7.266 | ET : 0.783 | TC : 0.67 | WT : 0.708
+Val | Epoch: 11 | Iter: 313 Overall Loss: 0.886 | BackGround: 7.005 | ET : 0.783 | TC : 0.671 | WT : 0.708
+Train | Epoch: 12 | Iter: 100 Overall Loss: 0.55 | BackGround: 1.009 | ET : 0.879 | TC : 0.801 | WT : 0.827
+Train | Epoch: 12 | Iter: 200 Overall Loss: 0.547 | BackGround: 1.004 | ET : 0.874 | TC : 0.797 | WT : 0.823
+Train | Epoch: 12 | Iter: 300 Overall Loss: 0.559 | BackGround: 1.002 | ET : 0.872 | TC : 0.789 | WT : 0.817
+Train | Epoch: 12 | Iter: 400 Overall Loss: 0.556 | BackGround: 1.001 | ET : 0.873 | TC : 0.79 | WT : 0.818
+Train | Epoch: 12 | Iter: 500 Overall Loss: 0.549 | BackGround: 1.001 | ET : 0.873 | TC : 0.792 | WT : 0.819
+Train | Epoch: 12 | Iter: 600 Overall Loss: 0.546 | BackGround: 1.001 | ET : 0.874 | TC : 0.793 | WT : 0.82
+Train | Epoch: 12 | Iter: 700 Overall Loss: 0.548 | BackGround: 1.0 | ET : 0.873 | TC : 0.792 | WT : 0.819
+Train | Epoch: 12 | Iter: 800 Overall Loss: 0.546 | BackGround: 1.0 | ET : 0.873 | TC : 0.793 | WT : 0.82
+Train | Epoch: 12 | Iter: 900 Overall Loss: 0.545 | BackGround: 1.0 | ET : 0.873 | TC : 0.793 | WT : 0.82
+Train | Epoch: 12 | Iter: 1000 Overall Loss: 0.546 | BackGround: 1.0 | ET : 0.874 | TC : 0.792 | WT : 0.819
+Train | Epoch: 12 | Iter: 1100 Overall Loss: 0.544 | BackGround: 1.0 | ET : 0.874 | TC : 0.793 | WT : 0.82
+Train | Epoch: 12 | Iter: 1200 Overall Loss: 0.542 | BackGround: 1.0 | ET : 0.874 | TC : 0.793 | WT : 0.82
+Train | Epoch: 12 | Iter: 1300 Overall Loss: 0.54 | BackGround: 1.0 | ET : 0.875 | TC : 0.794 | WT : 0.821
+Train | Epoch: 12 | Iter: 1400 Overall Loss: 0.539 | BackGround: 1.0 | ET : 0.875 | TC : 0.794 | WT : 0.821
+Train | Epoch: 12 | Iter: 1500 Overall Loss: 0.54 | BackGround: 1.0 | ET : 0.874 | TC : 0.794 | WT : 0.821
+Train | Epoch: 12 | Iter: 1600 Overall Loss: 0.539 | BackGround: 1.0 | ET : 0.875 | TC : 0.794 | WT : 0.821
+Train | Epoch: 12 | Iter: 1700 Overall Loss: 0.538 | BackGround: 1.0 | ET : 0.875 | TC : 0.794 | WT : 0.821
+Train | Epoch: 12 | Iter: 1800 Overall Loss: 0.537 | BackGround: 1.0 | ET : 0.875 | TC : 0.795 | WT : 0.822
+Train | Epoch: 12 | Iter: 1875 Overall Loss: 0.537 | BackGround: 1.0 | ET : 0.875 | TC : 0.795 | WT : 0.822
+Val | Epoch: 12 | Iter: 100 Overall Loss: 0.899 | BackGround: 19.93 | ET : 0.811 | TC : 0.661 | WT : 0.711
+Val | Epoch: 12 | Iter: 200 Overall Loss: 0.872 | BackGround: 10.417 | ET : 0.813 | TC : 0.665 | WT : 0.715
+Val | Epoch: 12 | Iter: 300 Overall Loss: 0.873 | BackGround: 7.267 | ET : 0.814 | TC : 0.662 | WT : 0.713
+Val | Epoch: 12 | Iter: 313 Overall Loss: 0.87 | BackGround: 7.006 | ET : 0.815 | TC : 0.663 | WT : 0.714
+Train | Epoch: 13 | Iter: 100 Overall Loss: 0.555 | BackGround: 1.009 | ET : 0.874 | TC : 0.801 | WT : 0.825
+Train | Epoch: 13 | Iter: 200 Overall Loss: 0.543 | BackGround: 1.004 | ET : 0.875 | TC : 0.798 | WT : 0.824
+Train | Epoch: 13 | Iter: 300 Overall Loss: 0.536 | BackGround: 1.002 | ET : 0.875 | TC : 0.8 | WT : 0.825
+Train | Epoch: 13 | Iter: 400 Overall Loss: 0.527 | BackGround: 1.002 | ET : 0.877 | TC : 0.802 | WT : 0.827
+Train | Epoch: 13 | Iter: 500 Overall Loss: 0.526 | BackGround: 1.001 | ET : 0.877 | TC : 0.802 | WT : 0.827
+Train | Epoch: 13 | Iter: 600 Overall Loss: 0.527 | BackGround: 1.001 | ET : 0.876 | TC : 0.802 | WT : 0.827
+Train | Epoch: 13 | Iter: 700 Overall Loss: 0.527 | BackGround: 1.0 | ET : 0.876 | TC : 0.801 | WT : 0.826
+Train | Epoch: 13 | Iter: 800 Overall Loss: 0.527 | BackGround: 1.0 | ET : 0.877 | TC : 0.8 | WT : 0.826
+Train | Epoch: 13 | Iter: 900 Overall Loss: 0.524 | BackGround: 1.0 | ET : 0.877 | TC : 0.801 | WT : 0.826
+Train | Epoch: 13 | Iter: 1000 Overall Loss: 0.523 | BackGround: 1.0 | ET : 0.878 | TC : 0.801 | WT : 0.827
+Train | Epoch: 13 | Iter: 1100 Overall Loss: 0.524 | BackGround: 1.0 | ET : 0.878 | TC : 0.801 | WT : 0.827
+Train | Epoch: 13 | Iter: 1200 Overall Loss: 0.523 | BackGround: 1.0 | ET : 0.878 | TC : 0.801 | WT : 0.827
+Train | Epoch: 13 | Iter: 1300 Overall Loss: 0.521 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1400 Overall Loss: 0.52 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1500 Overall Loss: 0.52 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1600 Overall Loss: 0.519 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1700 Overall Loss: 0.519 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1800 Overall Loss: 0.519 | BackGround: 1.0 | ET : 0.879 | TC : 0.802 | WT : 0.828
+Train | Epoch: 13 | Iter: 1875 Overall Loss: 0.52 | BackGround: 1.0 | ET : 0.879 | TC : 0.801 | WT : 0.827
+Val | Epoch: 13 | Iter: 100 Overall Loss: 1.024 | BackGround: 19.93 | ET : 0.771 | TC : 0.618 | WT : 0.669
+Val | Epoch: 13 | Iter: 200 Overall Loss: 0.994 | BackGround: 10.417 | ET : 0.77 | TC : 0.627 | WT : 0.674
+Val | Epoch: 13 | Iter: 300 Overall Loss: 0.986 | BackGround: 7.267 | ET : 0.768 | TC : 0.629 | WT : 0.675
+Val | Epoch: 13 | Iter: 313 Overall Loss: 0.981 | BackGround: 7.006 | ET : 0.769 | TC : 0.631 | WT : 0.677
+Train | Epoch: 14 | Iter: 100 Overall Loss: 0.528 | BackGround: 1.009 | ET : 0.888 | TC : 0.808 | WT : 0.835
+Train | Epoch: 14 | Iter: 200 Overall Loss: 0.509 | BackGround: 1.004 | ET : 0.881 | TC : 0.812 | WT : 0.835
+Train | Epoch: 14 | Iter: 300 Overall Loss: 0.507 | BackGround: 1.002 | ET : 0.882 | TC : 0.811 | WT : 0.835
+Train | Epoch: 14 | Iter: 400 Overall Loss: 0.51 | BackGround: 1.002 | ET : 0.879 | TC : 0.81 | WT : 0.833
+Train | Epoch: 14 | Iter: 500 Overall Loss: 0.512 | BackGround: 1.001 | ET : 0.879 | TC : 0.807 | WT : 0.831
+Train | Epoch: 14 | Iter: 600 Overall Loss: 0.508 | BackGround: 1.001 | ET : 0.88 | TC : 0.809 | WT : 0.833
+Train | Epoch: 14 | Iter: 700 Overall Loss: 0.508 | BackGround: 1.001 | ET : 0.881 | TC : 0.808 | WT : 0.832
+Train | Epoch: 14 | Iter: 800 Overall Loss: 0.507 | BackGround: 1.0 | ET : 0.881 | TC : 0.808 | WT : 0.832
+Train | Epoch: 14 | Iter: 900 Overall Loss: 0.507 | BackGround: 1.0 | ET : 0.882 | TC : 0.807 | WT : 0.832
+Train | Epoch: 14 | Iter: 1000 Overall Loss: 0.505 | BackGround: 1.0 | ET : 0.881 | TC : 0.809 | WT : 0.833
+Train | Epoch: 14 | Iter: 1100 Overall Loss: 0.503 | BackGround: 1.0 | ET : 0.882 | TC : 0.809 | WT : 0.833
+Train | Epoch: 14 | Iter: 1200 Overall Loss: 0.502 | BackGround: 1.0 | ET : 0.882 | TC : 0.809 | WT : 0.834
+Train | Epoch: 14 | Iter: 1300 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.882 | TC : 0.81 | WT : 0.834
+Train | Epoch: 14 | Iter: 1400 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.882 | TC : 0.81 | WT : 0.834
+Train | Epoch: 14 | Iter: 1500 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.882 | TC : 0.809 | WT : 0.834
+Train | Epoch: 14 | Iter: 1600 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.883 | TC : 0.809 | WT : 0.834
+Train | Epoch: 14 | Iter: 1700 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.883 | TC : 0.809 | WT : 0.834
+Train | Epoch: 14 | Iter: 1800 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.883 | TC : 0.809 | WT : 0.834
+Train | Epoch: 14 | Iter: 1875 Overall Loss: 0.501 | BackGround: 1.0 | ET : 0.883 | TC : 0.809 | WT : 0.834
+Val | Epoch: 14 | Iter: 100 Overall Loss: 0.885 | BackGround: 19.931 | ET : 0.805 | TC : 0.67 | WT : 0.715
+Val | Epoch: 14 | Iter: 200 Overall Loss: 0.911 | BackGround: 10.417 | ET : 0.796 | TC : 0.655 | WT : 0.702
+Val | Epoch: 14 | Iter: 300 Overall Loss: 0.904 | BackGround: 7.267 | ET : 0.797 | TC : 0.655 | WT : 0.703
+Val | Epoch: 14 | Iter: 313 Overall Loss: 0.904 | BackGround: 7.006 | ET : 0.797 | TC : 0.655 | WT : 0.703
+Train | Epoch: 15 | Iter: 100 Overall Loss: 0.494 | BackGround: 1.009 | ET : 0.898 | TC : 0.82 | WT : 0.846
+Train | Epoch: 15 | Iter: 200 Overall Loss: 0.494 | BackGround: 1.004 | ET : 0.892 | TC : 0.815 | WT : 0.841
+Train | Epoch: 15 | Iter: 300 Overall Loss: 0.492 | BackGround: 1.002 | ET : 0.891 | TC : 0.814 | WT : 0.839
+Train | Epoch: 15 | Iter: 400 Overall Loss: 0.494 | BackGround: 1.002 | ET : 0.888 | TC : 0.813 | WT : 0.838
+Train | Epoch: 15 | Iter: 500 Overall Loss: 0.491 | BackGround: 1.001 | ET : 0.888 | TC : 0.814 | WT : 0.839
+Train | Epoch: 15 | Iter: 600 Overall Loss: 0.491 | BackGround: 1.001 | ET : 0.888 | TC : 0.814 | WT : 0.838
+Train | Epoch: 15 | Iter: 700 Overall Loss: 0.493 | BackGround: 1.001 | ET : 0.887 | TC : 0.812 | WT : 0.837
+Train | Epoch: 15 | Iter: 800 Overall Loss: 0.492 | BackGround: 1.0 | ET : 0.887 | TC : 0.813 | WT : 0.838
+Train | Epoch: 15 | Iter: 900 Overall Loss: 0.491 | BackGround: 1.0 | ET : 0.887 | TC : 0.813 | WT : 0.838
+Train | Epoch: 15 | Iter: 1000 Overall Loss: 0.489 | BackGround: 1.0 | ET : 0.887 | TC : 0.814 | WT : 0.838
+Train | Epoch: 15 | Iter: 1100 Overall Loss: 0.49 | BackGround: 1.0 | ET : 0.886 | TC : 0.814 | WT : 0.838
+Train | Epoch: 15 | Iter: 1200 Overall Loss: 0.489 | BackGround: 1.0 | ET : 0.887 | TC : 0.814 | WT : 0.838
+Train | Epoch: 15 | Iter: 1300 Overall Loss: 0.488 | BackGround: 1.0 | ET : 0.887 | TC : 0.815 | WT : 0.839
+Train | Epoch: 15 | Iter: 1400 Overall Loss: 0.488 | BackGround: 1.0 | ET : 0.887 | TC : 0.814 | WT : 0.838
+Train | Epoch: 15 | Iter: 1500 Overall Loss: 0.486 | BackGround: 1.0 | ET : 0.887 | TC : 0.815 | WT : 0.839
+Train | Epoch: 15 | Iter: 1600 Overall Loss: 0.485 | BackGround: 1.0 | ET : 0.887 | TC : 0.816 | WT : 0.839
+Train | Epoch: 15 | Iter: 1700 Overall Loss: 0.486 | BackGround: 1.0 | ET : 0.887 | TC : 0.815 | WT : 0.839
+Train | Epoch: 15 | Iter: 1800 Overall Loss: 0.487 | BackGround: 1.0 | ET : 0.887 | TC : 0.815 | WT : 0.839
+Train | Epoch: 15 | Iter: 1875 Overall Loss: 0.486 | BackGround: 1.0 | ET : 0.887 | TC : 0.815 | WT : 0.839
+Val | Epoch: 15 | Iter: 100 Overall Loss: 0.841 | BackGround: 19.931 | ET : 0.828 | TC : 0.681 | WT : 0.73
+Val | Epoch: 15 | Iter: 200 Overall Loss: 0.857 | BackGround: 10.417 | ET : 0.813 | TC : 0.673 | WT : 0.72
+Val | Epoch: 15 | Iter: 300 Overall Loss: 0.855 | BackGround: 7.267 | ET : 0.812 | TC : 0.672 | WT : 0.719
+Val | Epoch: 15 | Iter: 313 Overall Loss: 0.853 | BackGround: 7.006 | ET : 0.813 | TC : 0.672 | WT : 0.719
+Saving Model
+Train | Epoch: 16 | Iter: 100 Overall Loss: 0.493 | BackGround: 1.009 | ET : 0.898 | TC : 0.821 | WT : 0.846
+Train | Epoch: 16 | Iter: 200 Overall Loss: 0.492 | BackGround: 1.004 | ET : 0.892 | TC : 0.816 | WT : 0.841
+Train | Epoch: 16 | Iter: 300 Overall Loss: 0.487 | BackGround: 1.002 | ET : 0.892 | TC : 0.816 | WT : 0.841
+Train | Epoch: 16 | Iter: 400 Overall Loss: 0.484 | BackGround: 1.002 | ET : 0.892 | TC : 0.816 | WT : 0.841
+Train | Epoch: 16 | Iter: 500 Overall Loss: 0.481 | BackGround: 1.001 | ET : 0.892 | TC : 0.817 | WT : 0.842
+Train | Epoch: 16 | Iter: 600 Overall Loss: 0.478 | BackGround: 1.001 | ET : 0.891 | TC : 0.819 | WT : 0.843
+Train | Epoch: 16 | Iter: 700 Overall Loss: 0.476 | BackGround: 1.001 | ET : 0.89 | TC : 0.819 | WT : 0.843
+Train | Epoch: 16 | Iter: 800 Overall Loss: 0.475 | BackGround: 1.0 | ET : 0.89 | TC : 0.82 | WT : 0.843
+Train | Epoch: 16 | Iter: 900 Overall Loss: 0.474 | BackGround: 1.0 | ET : 0.89 | TC : 0.82 | WT : 0.843
+Train | Epoch: 16 | Iter: 1000 Overall Loss: 0.473 | BackGround: 1.0 | ET : 0.89 | TC : 0.82 | WT : 0.843
+Train | Epoch: 16 | Iter: 1100 Overall Loss: 0.474 | BackGround: 1.0 | ET : 0.89 | TC : 0.82 | WT : 0.843
+Train | Epoch: 16 | Iter: 1200 Overall Loss: 0.476 | BackGround: 1.0 | ET : 0.889 | TC : 0.819 | WT : 0.842
+Train | Epoch: 16 | Iter: 1300 Overall Loss: 0.478 | BackGround: 1.0 | ET : 0.889 | TC : 0.819 | WT : 0.842
+Train | Epoch: 16 | Iter: 1400 Overall Loss: 0.477 | BackGround: 1.0 | ET : 0.888 | TC : 0.819 | WT : 0.842
+Train | Epoch: 16 | Iter: 1500 Overall Loss: 0.478 | BackGround: 1.0 | ET : 0.888 | TC : 0.818 | WT : 0.841
+Train | Epoch: 16 | Iter: 1600 Overall Loss: 0.478 | BackGround: 1.0 | ET : 0.888 | TC : 0.818 | WT : 0.841
+Train | Epoch: 16 | Iter: 1700 Overall Loss: 0.478 | BackGround: 1.0 | ET : 0.888 | TC : 0.819 | WT : 0.842
+Train | Epoch: 16 | Iter: 1800 Overall Loss: 0.477 | BackGround: 1.0 | ET : 0.888 | TC : 0.819 | WT : 0.842
+Train | Epoch: 16 | Iter: 1875 Overall Loss: 0.476 | BackGround: 1.0 | ET : 0.888 | TC : 0.819 | WT : 0.842
+Val | Epoch: 16 | Iter: 100 Overall Loss: 0.87 | BackGround: 19.932 | ET : 0.805 | TC : 0.679 | WT : 0.721
+Val | Epoch: 16 | Iter: 200 Overall Loss: 0.869 | BackGround: 10.418 | ET : 0.806 | TC : 0.671 | WT : 0.716
+Val | Epoch: 16 | Iter: 300 Overall Loss: 0.873 | BackGround: 7.268 | ET : 0.805 | TC : 0.667 | WT : 0.713
+Val | Epoch: 16 | Iter: 313 Overall Loss: 0.874 | BackGround: 7.006 | ET : 0.804 | TC : 0.667 | WT : 0.713
+Train | Epoch: 17 | Iter: 100 Overall Loss: 0.475 | BackGround: 1.009 | ET : 0.905 | TC : 0.826 | WT : 0.852
+Train | Epoch: 17 | Iter: 200 Overall Loss: 0.464 | BackGround: 1.004 | ET : 0.899 | TC : 0.827 | WT : 0.851
+Train | Epoch: 17 | Iter: 300 Overall Loss: 0.455 | BackGround: 1.003 | ET : 0.898 | TC : 0.829 | WT : 0.852
+Train | Epoch: 17 | Iter: 400 Overall Loss: 0.457 | BackGround: 1.002 | ET : 0.896 | TC : 0.828 | WT : 0.851
+Train | Epoch: 17 | Iter: 500 Overall Loss: 0.459 | BackGround: 1.001 | ET : 0.894 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 600 Overall Loss: 0.458 | BackGround: 1.001 | ET : 0.894 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 700 Overall Loss: 0.458 | BackGround: 1.001 | ET : 0.894 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 800 Overall Loss: 0.458 | BackGround: 1.0 | ET : 0.894 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 900 Overall Loss: 0.459 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Train | Epoch: 17 | Iter: 1000 Overall Loss: 0.456 | BackGround: 1.0 | ET : 0.893 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 1100 Overall Loss: 0.455 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 17 | Iter: 1200 Overall Loss: 0.456 | BackGround: 1.0 | ET : 0.894 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 1300 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 1400 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Train | Epoch: 17 | Iter: 1500 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Train | Epoch: 17 | Iter: 1600 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.827 | WT : 0.849
+Train | Epoch: 17 | Iter: 1700 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Train | Epoch: 17 | Iter: 1800 Overall Loss: 0.457 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Train | Epoch: 17 | Iter: 1875 Overall Loss: 0.458 | BackGround: 1.0 | ET : 0.893 | TC : 0.826 | WT : 0.848
+Val | Epoch: 17 | Iter: 100 Overall Loss: 0.86 | BackGround: 19.932 | ET : 0.804 | TC : 0.684 | WT : 0.724
+Val | Epoch: 17 | Iter: 200 Overall Loss: 0.866 | BackGround: 10.418 | ET : 0.791 | TC : 0.679 | WT : 0.717
+Val | Epoch: 17 | Iter: 300 Overall Loss: 0.875 | BackGround: 7.268 | ET : 0.788 | TC : 0.674 | WT : 0.712
+Val | Epoch: 17 | Iter: 313 Overall Loss: 0.879 | BackGround: 7.006 | ET : 0.787 | TC : 0.673 | WT : 0.711
+Train | Epoch: 18 | Iter: 100 Overall Loss: 0.448 | BackGround: 1.009 | ET : 0.906 | TC : 0.839 | WT : 0.861
+Train | Epoch: 18 | Iter: 200 Overall Loss: 0.462 | BackGround: 1.004 | ET : 0.897 | TC : 0.829 | WT : 0.851
+Train | Epoch: 18 | Iter: 300 Overall Loss: 0.453 | BackGround: 1.003 | ET : 0.898 | TC : 0.831 | WT : 0.853
+Train | Epoch: 18 | Iter: 400 Overall Loss: 0.454 | BackGround: 1.002 | ET : 0.897 | TC : 0.829 | WT : 0.852
+Train | Epoch: 18 | Iter: 500 Overall Loss: 0.454 | BackGround: 1.001 | ET : 0.896 | TC : 0.829 | WT : 0.851
+Train | Epoch: 18 | Iter: 600 Overall Loss: 0.452 | BackGround: 1.001 | ET : 0.896 | TC : 0.83 | WT : 0.852
+Train | Epoch: 18 | Iter: 700 Overall Loss: 0.452 | BackGround: 1.001 | ET : 0.896 | TC : 0.829 | WT : 0.851
+Train | Epoch: 18 | Iter: 800 Overall Loss: 0.453 | BackGround: 1.0 | ET : 0.895 | TC : 0.829 | WT : 0.851
+Train | Epoch: 18 | Iter: 900 Overall Loss: 0.454 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 18 | Iter: 1000 Overall Loss: 0.455 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 18 | Iter: 1100 Overall Loss: 0.453 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 18 | Iter: 1200 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 18 | Iter: 1300 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.894 | TC : 0.828 | WT : 0.85
+Train | Epoch: 18 | Iter: 1400 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.894 | TC : 0.829 | WT : 0.85
+Train | Epoch: 18 | Iter: 1500 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.894 | TC : 0.829 | WT : 0.85
+Train | Epoch: 18 | Iter: 1600 Overall Loss: 0.451 | BackGround: 1.0 | ET : 0.894 | TC : 0.829 | WT : 0.851
+Train | Epoch: 18 | Iter: 1700 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.893 | TC : 0.829 | WT : 0.85
+Train | Epoch: 18 | Iter: 1800 Overall Loss: 0.452 | BackGround: 1.0 | ET : 0.893 | TC : 0.829 | WT : 0.85
+Train | Epoch: 18 | Iter: 1875 Overall Loss: 0.451 | BackGround: 1.0 | ET : 0.893 | TC : 0.829 | WT : 0.85
+Val | Epoch: 18 | Iter: 100 Overall Loss: 0.82 | BackGround: 19.933 | ET : 0.809 | TC : 0.702 | WT : 0.737
+Val | Epoch: 18 | Iter: 200 Overall Loss: 0.822 | BackGround: 10.418 | ET : 0.805 | TC : 0.694 | WT : 0.731
+Val | Epoch: 18 | Iter: 300 Overall Loss: 0.822 | BackGround: 7.268 | ET : 0.804 | TC : 0.693 | WT : 0.73
+Val | Epoch: 18 | Iter: 313 Overall Loss: 0.822 | BackGround: 7.007 | ET : 0.804 | TC : 0.693 | WT : 0.73
+Saving Model
+Train | Epoch: 19 | Iter: 100 Overall Loss: 0.442 | BackGround: 1.009 | ET : 0.91 | TC : 0.84 | WT : 0.863
+Train | Epoch: 19 | Iter: 200 Overall Loss: 0.432 | BackGround: 1.004 | ET : 0.904 | TC : 0.84 | WT : 0.861
+Train | Epoch: 19 | Iter: 300 Overall Loss: 0.428 | BackGround: 1.003 | ET : 0.902 | TC : 0.841 | WT : 0.861
+Train | Epoch: 19 | Iter: 400 Overall Loss: 0.436 | BackGround: 1.002 | ET : 0.9 | TC : 0.837 | WT : 0.858
+Train | Epoch: 19 | Iter: 500 Overall Loss: 0.436 | BackGround: 1.001 | ET : 0.899 | TC : 0.836 | WT : 0.857
+Train | Epoch: 19 | Iter: 600 Overall Loss: 0.438 | BackGround: 1.001 | ET : 0.898 | TC : 0.835 | WT : 0.856
+Train | Epoch: 19 | Iter: 700 Overall Loss: 0.441 | BackGround: 1.001 | ET : 0.897 | TC : 0.834 | WT : 0.855
+Train | Epoch: 19 | Iter: 800 Overall Loss: 0.44 | BackGround: 1.0 | ET : 0.897 | TC : 0.834 | WT : 0.855
+Train | Epoch: 19 | Iter: 900 Overall Loss: 0.442 | BackGround: 1.0 | ET : 0.897 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1000 Overall Loss: 0.443 | BackGround: 1.0 | ET : 0.897 | TC : 0.832 | WT : 0.854
+Train | Epoch: 19 | Iter: 1100 Overall Loss: 0.441 | BackGround: 1.0 | ET : 0.897 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1200 Overall Loss: 0.442 | BackGround: 1.0 | ET : 0.897 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1300 Overall Loss: 0.442 | BackGround: 1.0 | ET : 0.897 | TC : 0.832 | WT : 0.854
+Train | Epoch: 19 | Iter: 1400 Overall Loss: 0.441 | BackGround: 1.0 | ET : 0.896 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1500 Overall Loss: 0.441 | BackGround: 1.0 | ET : 0.896 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1600 Overall Loss: 0.44 | BackGround: 1.0 | ET : 0.896 | TC : 0.834 | WT : 0.854
+Train | Epoch: 19 | Iter: 1700 Overall Loss: 0.44 | BackGround: 1.0 | ET : 0.896 | TC : 0.834 | WT : 0.854
+Train | Epoch: 19 | Iter: 1800 Overall Loss: 0.44 | BackGround: 1.0 | ET : 0.896 | TC : 0.833 | WT : 0.854
+Train | Epoch: 19 | Iter: 1875 Overall Loss: 0.44 | BackGround: 1.0 | ET : 0.896 | TC : 0.834 | WT : 0.854
+Val | Epoch: 19 | Iter: 100 Overall Loss: 0.886 | BackGround: 19.933 | ET : 0.799 | TC : 0.673 | WT : 0.715
+Val | Epoch: 19 | Iter: 200 Overall Loss: 0.882 | BackGround: 10.418 | ET : 0.796 | TC : 0.669 | WT : 0.711
+Val | Epoch: 19 | Iter: 300 Overall Loss: 0.889 | BackGround: 7.268 | ET : 0.788 | TC : 0.667 | WT : 0.708
+Val | Epoch: 19 | Iter: 313 Overall Loss: 0.888 | BackGround: 7.007 | ET : 0.788 | TC : 0.667 | WT : 0.708
+Train | Epoch: 20 | Iter: 100 Overall Loss: 0.428 | BackGround: 1.009 | ET : 0.908 | TC : 0.847 | WT : 0.867
+Train | Epoch: 20 | Iter: 200 Overall Loss: 0.428 | BackGround: 1.004 | ET : 0.904 | TC : 0.842 | WT : 0.863
+Train | Epoch: 20 | Iter: 300 Overall Loss: 0.425 | BackGround: 1.003 | ET : 0.903 | TC : 0.841 | WT : 0.862
+Train | Epoch: 20 | Iter: 400 Overall Loss: 0.427 | BackGround: 1.002 | ET : 0.902 | TC : 0.84 | WT : 0.86
+Train | Epoch: 20 | Iter: 500 Overall Loss: 0.428 | BackGround: 1.001 | ET : 0.901 | TC : 0.839 | WT : 0.86
+Train | Epoch: 20 | Iter: 600 Overall Loss: 0.429 | BackGround: 1.001 | ET : 0.9 | TC : 0.839 | WT : 0.859
+Train | Epoch: 20 | Iter: 700 Overall Loss: 0.428 | BackGround: 1.001 | ET : 0.9 | TC : 0.838 | WT : 0.859
+Train | Epoch: 20 | Iter: 800 Overall Loss: 0.43 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.858
+Train | Epoch: 20 | Iter: 900 Overall Loss: 0.432 | BackGround: 1.0 | ET : 0.898 | TC : 0.837 | WT : 0.857
+Train | Epoch: 20 | Iter: 1000 Overall Loss: 0.431 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.858
+Train | Epoch: 20 | Iter: 1100 Overall Loss: 0.431 | BackGround: 1.0 | ET : 0.898 | TC : 0.837 | WT : 0.857
+Train | Epoch: 20 | Iter: 1200 Overall Loss: 0.43 | BackGround: 1.0 | ET : 0.898 | TC : 0.838 | WT : 0.858
+Train | Epoch: 20 | Iter: 1300 Overall Loss: 0.43 | BackGround: 1.0 | ET : 0.898 | TC : 0.838 | WT : 0.858
+Train | Epoch: 20 | Iter: 1400 Overall Loss: 0.431 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.857
+Train | Epoch: 20 | Iter: 1500 Overall Loss: 0.431 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.857
+Train | Epoch: 20 | Iter: 1600 Overall Loss: 0.431 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.857
+Train | Epoch: 20 | Iter: 1700 Overall Loss: 0.43 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.858
+Train | Epoch: 20 | Iter: 1800 Overall Loss: 0.43 | BackGround: 1.0 | ET : 0.899 | TC : 0.837 | WT : 0.858
+Train | Epoch: 20 | Iter: 1875 Overall Loss: 0.429 | BackGround: 1.0 | ET : 0.899 | TC : 0.838 | WT : 0.858
+Val | Epoch: 20 | Iter: 100 Overall Loss: 0.834 | BackGround: 19.934 | ET : 0.8 | TC : 0.699 | WT : 0.733
+Val | Epoch: 20 | Iter: 200 Overall Loss: 0.823 | BackGround: 10.419 | ET : 0.8 | TC : 0.697 | WT : 0.731
+Val | Epoch: 20 | Iter: 300 Overall Loss: 0.805 | BackGround: 7.268 | ET : 0.804 | TC : 0.701 | WT : 0.735
+Val | Epoch: 20 | Iter: 313 Overall Loss: 0.803 | BackGround: 7.007 | ET : 0.805 | TC : 0.702 | WT : 0.736
+Saving Model
+Ending script...%

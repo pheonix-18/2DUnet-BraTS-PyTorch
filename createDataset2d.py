@@ -1,0 +1,101 @@
+import cv2
+import os
+import pdb
+import numpy as np
+import nibabel as nib
+from sklearn.preprocessing import LabelBinarizer
+
+IMG_ROOT = '/home/sarucrcv/datasets/Task01_BrainTumour/imagesTr'
+#IMG_PATH = '/Volumes/SARATHs SSD/Task01_BrainTumour/imagesTr/BRATS_001.nii.gz'
+IMG_OUTPUT_ROOT = './train/images'
+
+LABEL_ROOT = '/home/sarucrcv/datasets/Task01_BrainTumour/labelsTr'
+#LABEL_PATH = '/Volumes/SARATHs SSD/Task01_BrainTumour/labelsTr/BRATS_001.nii.gz'
+LABEL_OUTPUT_ROOT = './train/labels'
+
+L0 = 0      # Background
+L1 = 50     # Necrotic and Non-enhancing Tumor
+L2 = 100    # Edema
+L3 = 150    # Enhancing Tumor
+
+# MRI Image channels Description
+# ch0: FLAIR / ch1: T1 / ch2: T1c/ ch3: T2
+# cf) In this project, we use FLAIR and T1c MRI dataset
+#
+# Data Load Example
+#img = nib.load(IMG_PATH)
+#img = (img.get_fdata())[:,:,:,3]                # img shape = (240,240,155)
+
+
+# MRI Label Channels Description
+# 0: Background         / 1: Necrotic and non-enhancing tumor (paper, 1+3)
+# 2: edema (paper, 2)   / 3: Enhancing tumor (paper, 4)
+#
+# <Input>           <Prediction>
+# FLAIR             Complete(1,2,3)
+# FLAIR             Core(1,3)
+# T1c               Enhancing(3)
+#
+# Data Load Example
+# label = nib.load(LABEL_PATH)
+# label = (label.get_fdata()).astype(np.uint16)   # label shape = (240,240,155)
+
+
+def nii2jpg_img(img_path, output_root):
+    img_name = (img_path.split('/')[-1]).split('.')[0]
+    output_path = os.path.join(output_root, img_name)
+    try:
+        os.makedirs(output_root)
+    except:
+        pass
+    try:
+        os.makedirs(output_path)
+    except:
+        pass
+    img = nib.load(img_path)
+    
+    img = (img.get_fdata())[:,:,:,1]
+    img = (img/img.max())*255
+    img = img.astype(np.uint8)
+
+    for i in range(img.shape[2]):
+        filename = os.path.join(output_path, img_name+'_'+str(i)+'.jpg')
+        gray_img = img[:,:,i]
+        gray_img = np.expand_dims(gray_img,axis=2)
+        cv2.imwrite(filename, gray_img)
+        
+
+
+def nii2jpg_label(img_path, output_root):
+    img_name = (img_path.split('/')[-1]).split('.')[0]
+    output_path = os.path.join(output_root, img_name)
+    try:
+        os.mkdir(output_root)
+    except:
+        pass
+    try:
+        os.mkdir(output_path)
+    except:
+        pass
+    img = nib.load(img_path)
+    img = (img.get_fdata())[:,:,:]
+    # img = img*50
+    img = img.astype(np.uint8)
+
+    for i in range(img.shape[2]):
+        filename = os.path.join(output_path, img_name+'_'+str(i)+'.jpg')
+        gray_img = img[:,:,i]
+        gray_img = np.expand_dims(gray_img,axis=2)
+        cv2.imwrite(filename, gray_img)
+
+from tqdm import tqdm
+
+for path in tqdm(os.listdir(IMG_ROOT)):
+    if path[0] == '.':
+        continue
+    nii2jpg_img(os.path.join(IMG_ROOT,path), IMG_OUTPUT_ROOT)
+
+for path in tqdm(os.listdir(LABEL_ROOT)):
+    if path[0] == '.':
+        continue
+    nii2jpg_label(os.path.join(LABEL_ROOT,path), LABEL_OUTPUT_ROOT)
